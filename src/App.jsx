@@ -8,6 +8,7 @@ import Form3 from "./Form3";
 import Form4 from "./Form4";
 
 const App = () => {
+  console.log(import.meta.env.VITE_APPWRITE_URL);
   return (
     <Router>
       <div>
