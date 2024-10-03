@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main {
+  background-color: #dadada77;
+  backdrop-filter: blur(10px);
+}
+
+#form1 label {
+  background-color: transparent;
+}
+
+.ipt1:focus + .lable1,
+.ipt1:valid + .lable1 {
+  height: 30px;
+  line-height: 30px;
+  transform: translate(0, -25px) scale(0.9);
+  z-index: 11;
+  background-color: #dadada93;
+  backdrop-filter: blur(10px);
+}
+
+.hero2 {
+  background-color: #dadada0a;
+  backdrop-filter: blur(10px);
+}
+
+option {
+  background-color: #dadada;
+}
+
+@media (max-width: 868px) {
+  /* This CSS code block is defining styles for different elements within specific media query
+  conditions (max-width: 868px). Here's a breakdown of what each part is doing: */
+  .hero {
+    width: 100vw;
+    height: 150vh;
+    object-fit: cover;
+  }
+  .hero2 {
+    flex-direction: column;
+  }
+  .heroHead {
+    font-size: 7vw;
+  }
+  .heroSub {
+    font-size: 5vw;
+    width: 100%;
+  }
+  .main {
+    width: 90vw;
+  }
+
+  /* The CSS code `.popUp { width: 60vw; }` is setting the width of elements with the class "popUp" to
+  be 60% of the viewport width (vw). This rule applies when the viewport width is less than or equal
+  to 868px, as specified by the media query `@media (max-width: 868px)`. This styling adjustment is
+  made to ensure that elements with the class "popUp" have a specific width when the screen size is
+  within the defined range. */
+  .popUp {
+    width: 60vw;
+  }
+
+  .form2 {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .f2img {
+    width: 100vw;
+  }
+  #form2 {
+    width: 100vw;
+  }
+  .f2Head {
+    text-align: center;
+  }
+  .f2Sub {
+    font-size: 0.9rem;
+    width: 80vw;
+  }
+  .f2main {
+    width: 80vw;
+  }
+  .f2P label {
+    font-size: 0.9rem;
+  }
+  .f2p:nth-child(2) {
+    width: 100vw;
+  }
+
+  .f3main {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .f3img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: contain;
+  }
+  .f4main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .f4head {
+  }
+  .end {
+    height: 120vh;
+  }
+}
